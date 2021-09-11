@@ -9,12 +9,3 @@ minutes_left = hours_left % 60
 seconds = minutes_left
 
 print(days, "дн", hours, "час", minutes, "мин", seconds, "сек")
-# //-челоч
-# print(duration)
-# print(days)
-# print(days_left)
-# print(hours)
-# print(hours_left)
-# print(minutes)
-# print(minutes_left)
-# print(seconds)
