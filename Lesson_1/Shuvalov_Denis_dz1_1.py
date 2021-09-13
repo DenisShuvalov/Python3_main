@@ -8,4 +8,4 @@ minutes = hours_left // 60
 minutes_left = hours_left % 60
 seconds = minutes_left
 
-print(days, "дн", hours, "час", minutes, "мин", seconds, "сек")
+print(f'{days} дн {hours} час {minutes} мин {seconds} сек')
