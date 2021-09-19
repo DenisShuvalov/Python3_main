@@ -5,7 +5,7 @@ numbers_dictionary = {"zero": "ноль", "one": "один", "two": "два", "t
 
 def num_translate(num):
     if (num[:1].isupper()) == True:
-        return str(numbers_dictionary.get(num.lower())).title()
+        return numbers_dictionary.get(num.lower()).title()
     return numbers_dictionary.get(num)
 
 
