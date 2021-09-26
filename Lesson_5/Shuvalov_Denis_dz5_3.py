@@ -1,11 +1,10 @@
-from itertools import islice, zip_longest
+from itertools import zip_longest
 
-tutors = ['Иван', 'Анастасия', 'Петр', 'Сергей', 'Дмитрий', 'Борис', 'Елена', 'Кирилл']
+tutors = ['Иван', 'Анастасия', 'Петр', 'Сергей', 'Дмитрий', 'Борис', 'Елена', 'Кирилл', 'Федор']
 klasses = ['9А', '7В', '9Б', '9В', '8Б', '10А', '10Б', '9А']
 
-result = (i for i in zip_longest(tutors, klasses) if len(tutors) > len(klasses))
+result = ((t, k) for t, k in zip_longest(tutors, klasses))
 
-print(type(result))
-print(*islice(result, 9))
-print(next(result, 3))
+print(type(result), *result, sep=' ')
 
+print(next(result))
