@@ -2,8 +2,8 @@ from json import dump
 from itertools import zip_longest
 from pprint import pprint
 
-with open("users.csv", "r", encoding="utf=8") as users:
-    with open("hobby.csv", "r", encoding="utf=8") as hb:
+with open("users.csv", "r", encoding="utf-8") as users:
+    with open("hobby.csv", "r", encoding="utf-8") as hb:
 
         if len(users.readlines()) >= len(hb.readlines()):
             users.seek(0)
