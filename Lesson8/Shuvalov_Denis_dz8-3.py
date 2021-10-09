@@ -17,3 +17,5 @@ def calc_cube(*x, **y):
     return [i ** 3 for i in num_list]
 
 a = calc_cube(3.2, 8, 131.14, {'zer': 123}, 111, [22, 34])
+
+# print(calc_cube.__name__)
